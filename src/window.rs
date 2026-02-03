@@ -3,7 +3,7 @@ use cosmic::{Action, Element, Task};
 
 use cosmic::widget::{text, button};
 
-const ID: &str = "com.example.BasicApplet";
+const ID: &str = "io.ocf.logout-applet";
 
 #[derive(Default)]
 pub struct Window {
