@@ -41,8 +41,8 @@ impl cosmic::Application for Window {
     fn update(&mut self, message: Message) -> Task<Action<Self::Message>> {
         match message {
             Message::Logout => {
-                std::process::Command::new("loginctl")
-                    .args(["terminate-session", "$XDG_SESSION_ID"])
+                std::process::Command::new("cosmic-osd")
+                    .args(["log-out"])
                     .output()
                     .ok();
             }
